@@ -1,42 +1,57 @@
 {
     "type": "Config",
-    "favicon": "/images/favicon.svg",
+    "favicon": "/images/favicon.ico",
     "header": {
         "type": "Header",
-        "headerVariant": "variant-c",
+        "headerVariant": "variant-a",
         "isSticky": false,
         "title": "Personal",
-        "isTitleVisible": true,
+        "isTitleVisible": false,
         "primaryLinks": [
             {
                 "type": "Link",
-                "label": "Info",
-                "url": "/info"
+                "label": "Home",
+                "url": "/",
+                "altText": ""
             },
             {
                 "type": "Link",
                 "label": "Projects",
-                "url": "/projects"
+                "url": "/projects",
+                "altText": ""
+            },
+            {
+                "type": "Link",
+                "label": "About Me",
+                "url": "/info",
+                "altText": ""
+            },
+            {
+                "type": "Link",
+                "label": "Contact",
+                "url": "mailto:dkaplan0901@gmail.com",
+                "altText": "dkaplan0901@gmail.com"
             },
             {
                 "type": "Link",
                 "label": "Blog",
-                "url": "/blog"
+                "url": "/blog",
+                "altText": ""
             }
         ],
         "socialLinks": [
             {
                 "type": "Social",
-                "altText": "Twitter",
-                "label": "Twitter",
-                "url": "https://twitter.com/netlify",
-                "icon": "twitter"
+                "altText": "LinkedIn",
+                "label": "LinkedIn",
+                "url": "https://www.linkedin.com/in/davidkaplan42/",
+                "icon": "linkedin"
             },
             {
                 "type": "Social",
                 "altText": "GitHub",
                 "label": "GitHub",
-                "url": "https://github.com/netlify-templates",
+                "url": "https://github.com/highmarsorbit",
                 "icon": "github"
             }
         ],
@@ -48,41 +63,11 @@
     },
     "footer": {
         "type": "Footer",
-        "primaryLinks": [
-            {
-                "type": "Link",
-                "label": "Info",
-                "url": "/info",
-                "altText": ""
-            },
-            {
-                "type": "Link",
-                "label": "Contact",
-                "url": "mailto:thisismyemail.@myemail.me",
-                "altText": ""
-            },
-            {
-                "type": "Link",
-                "label": "Blog",
-                "url": "/blog",
-                "altText": ""
-            },
-            {
-                "type": "Link",
-                "label": "GitHub",
-                "url": "https://github.com/netlify-templates",
-                "altText": "Netlify templates"
-            }
-        ],
         "contacts": {
             "type": "ContactBlock",
             "title": "Contact details",
-            "phoneNumber": "850-123-5021",
-            "phoneAltText": "My phone number",
-            "email": "thisismyemail.@myemail.me",
-            "emailAltText": "My email",
-            "address": "312 Lovely Street, Brooklyn, NY, 123456",
-            "addressAltText": "My address"
+            "email": "dkaplan0901@gmail.com",
+            "emailAltText": "My email"
         },
         "copyrightText": "Powered by [Netlify](https://www.netlify.com/)",
         "styles": {

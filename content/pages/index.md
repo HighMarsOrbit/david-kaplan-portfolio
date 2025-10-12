@@ -1,7 +1,7 @@
 ---
 type: PageLayout
 title: Home
-colors: colors-a
+colors: colors-c
 backgroundImage:
   type: BackgroundImage
   url: /images/bg1.jpg
@@ -14,12 +14,14 @@ sections:
     colors: colors-f
     backgroundSize: full
     title: >-
-      I’m a developer, digital artist, consultant and a bunch of other
-      impressive titles and buzz words.
+      David Kaplan - Mechanical and Aerospace Engineer
     subtitle: >-
-      This is my info—I’m sharing it all this with ya’ll to impress you with all
-      the hard work I’ve done in the past few years. Once you’re impressed, you
-      can continue to scroll down to see more details and credentials about me.
+      I am an engineer looking for an opportunity to make aviation safer and better.
+      Scroll down to see some of my projects.
+    media:
+      type: 'ImageBlock'
+      url: '/images/about.jpg'
+      className: 'aspect-square rounded-full object-cover w-50 mb-10'
     styles:
       self:
         height: auto
@@ -30,12 +32,12 @@ sections:
           - ml-0
           - mr-0
         padding:
-          - pt-36
-          - pb-48
-          - pl-4
-          - pr-4
+          - pt-30
+          - pb-40
+          - pl-10
+          - pr-10
         flexDirection: row-reverse
-        textAlign: left
+        textAlign: center
     type: HeroSection
     actions: []
   - colors: colors-f

@@ -93,9 +93,21 @@ export const ThemeStyleModel: Model = {
                 {
                     label: 'Azeret Mono',
                     value: '"Azeret Mono", monospace'
+                },
+                {
+                    label: 'Times New Roman',
+                    value: '"Times New Roman", serif'
+                },
+                {
+                    label: 'Helvetica',
+                    value: '"Helvetica", sans-serif'
+                },
+                {
+                    label: 'Roboto',
+                    value: '"Roboto", sans-serif'
                 }
             ],
-            default: '"DM Mono", monospace',
+            default: '"Roboto", sans-serif',
             required: true
         },
         {

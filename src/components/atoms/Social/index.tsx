@@ -14,6 +14,7 @@ export default function Social(props) {
                 href={url}
                 aria-label={altText}
                 id={elementId || null}
+                target="_blank"
                 className={classNames('inline-flex items-center justify-center no-underline', className)}
             >
                 {label && <span className="sr-only">{label}</span>}
