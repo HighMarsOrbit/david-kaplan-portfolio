@@ -1,7 +1,9 @@
 // @flow strict
-import Link from 'next/link';
-import { CgGitFork } from "react-icons/cg";
-import { IoStar } from "react-icons/io5";
+import { personalData } from "@/utils/data/personal-data";
+import Link from "next/link";
+import { BiLogoLinkedin } from "react-icons/bi";
+import { IoLogoGithub } from "react-icons/io";
+import { MdAlternateEmail } from "react-icons/md";
 
 function Footer() {
   return (
@@ -11,31 +13,37 @@ function Footer() {
           <div className="absolute top-0 h-[1px] w-1/2  bg-gradient-to-r from-transparent via-violet-500 to-transparent"></div>
         </div>
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <p className="text-sm">
-            © Developer Portfolio by <Link target="_blank" href="https://www.linkedin.com/in/abu-said-bd/" className="text-[#16f2b3]">Abu Said</Link>
+          <p className="text-sm md:text-xl flex items-center gap-3">
+            <Link href={`mailto:${personalData.email}`}>
+              <MdAlternateEmail
+                className="bg-[#8b98a5] active:bg-[#8b98a5] p-2 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
+                size={36}
+              />
+            </Link>
+            <span>{personalData.email}</span>
           </p>
           <div className="flex items-center gap-5">
-            <Link
-              target="_blank"
-              href="https://github.com/said7388/developer-portfolio"
-              className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
-            >
-              <IoStar />
-              <span>Star</span>
-            </Link>
-            <Link
-              target="_blank"
-              href="https://github.com/said7388/developer-portfolio/fork"
-              className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
-            >
-              <CgGitFork />
-              <span>Fork</span>
-            </Link>
+            {personalData.linkedIn && (
+              <Link target="_blank" href={personalData.linkedIn}>
+                <BiLogoLinkedin
+                  className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
+                  size={48}
+                />
+              </Link>
+            )}
+            {personalData.github && (
+              <Link target="_blank" href={personalData.github}>
+                <IoLogoGithub
+                  className="bg-[#8b98a5] p-3 rounded-full hover:bg-[#16f2b3] hover:scale-110 transition-all duration-300 text-gray-800 cursor-pointer"
+                  size={48}
+                />
+              </Link>
+            )}
           </div>
         </div>
       </div>
-    </div >
+    </div>
   );
-};
+}
 
 export default Footer;

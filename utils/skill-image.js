@@ -74,20 +74,42 @@ import webix from '../app/assets/svg/skills/webix.svg';
 import wolframalpha from '../app/assets/svg/skills/wolframalpha.svg';
 import wordpress from '../app/assets/svg/skills/wordpress.svg';
 
+import dotnet from '../app/assets/svg/skills/dotnet.svg';
+import dotnetcore from '../app/assets/svg/skills/dotnetcore.svg';
+import fastapi from '../app/assets/svg/skills/fastapi.svg';
+import kubernetes from '../app/assets/svg/skills/kubernetes.svg';
+import linux from '../app/assets/svg/skills/linux.svg';
 import pandas from '../app/assets/svg/skills/pandas.svg';
 import scikitlearn from '../app/assets/svg/skills/scikit-learn.svg';
-import dotnet from '../app/assets/svg/skills/dotnet.svg';
-import dotnetcore from '../app/assets/svg/skills/dotnetcore.svg'
-import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
-import linux from '../app/assets/svg/skills/linux.svg'
-import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
-import fastapi from '../app/assets/svg/skills/fastapi.svg'
+import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg';
+
+import ansys from '../app/assets/svg/skills/ansys.svg';
+import fusion360 from '../app/assets/svg/skills/fusion360.svg';
+import nx from '../app/assets/svg/skills/nx.svg';
+import onshape from '../app/assets/svg/skills/onshape.svg';
+import r from '../app/assets/svg/skills/r.svg';
+import solidedge from '../app/assets/svg/skills/solidedge.svg';
+import solidworks from '../app/assets/svg/skills/solidworks.svg';
 
 
 
 export const skillsImage = (skill) => {
   const skillID = skill.toLowerCase();
   switch (skillID) {
+    case 'r':
+      return r
+    case 'solid edge':
+      return solidedge
+    case 'onshape':
+      return onshape
+    case 'ansys':
+      return ansys
+    case 'fusion 360':
+      return fusion360
+    case 'siemens nx':
+      return nx
+    case 'solidworks':
+      return solidworks
     case 'gcp':
       return gcp;
     case 'html':

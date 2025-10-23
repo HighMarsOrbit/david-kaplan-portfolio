@@ -10,7 +10,7 @@ import "./css/globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio of David Kaplan - Aerospace Engineer",
+  title: "David Kaplan - Aerospace Engineer",
   description:
     "This is the portfolio of David Kaplan. I am an aerospace and mechanical engineering student looking to make aviation better and safer.",
 };
