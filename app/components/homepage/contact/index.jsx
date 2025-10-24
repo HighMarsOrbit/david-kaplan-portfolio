@@ -18,8 +18,7 @@ function ContactSection() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
         <div>
           <p>
-            If you have any questions or opportunities, please do not hesitate
-            to contact me. I'd love to chat!
+            {"If you have any questions or opportunities, please do not hesitate to contact me. I'd love to chat!"}
           </p>
         </div>
         <div className="lg:w-3/4 ">
