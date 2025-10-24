@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg height="2500" viewBox="0 0 900 900" width="2500" xmlns="http://www.w3.org/2000/svg">
+  <path d="m0 0h900v900h-900z" style="fill: rgb(41, 73, 178);"/>
+  <path d="m0 0h900v900h-900zm300 114-101 1-1 84h-75l-7 1v581l4 1h578l1-46v-37l81 1 1-1 1-583-1-1-199-1z" fill="#fefffe"/>
+  <path d="m123 199h76l1 187v311l1 1 498 1v37l-1 46h-581l-1-1v-581z" fill="#009697"/>
+  <text style="fill: rgb(254, 255, 254); font-family: Arial, sans-serif; font-size: 328px; font-weight: 700; white-space: pre;" x="253.544" y="599.977">SE</text>
+</svg>
