@@ -4,7 +4,7 @@ export const projectsData = [
     name: "Front Hub Design",
     description:
       "This year, for CWRU Motorsports, I am designing the front hub, one of the highest-loaded parts on the car. Thanks to my new decision to move wheel bearings inboard, we managed to cut the weight of the front hub down by more than 15% with no performance downside, significantly improving our car's handling.",
-    link: "",
+    link: "/projects/fronthub",
     image: "/projects/new_hub_fea.png",
   },
   {
