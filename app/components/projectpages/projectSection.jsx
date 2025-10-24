@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ProjecSection({ title, description, image }) {
+export default function ProjectSection({ title, description, image }) {
   return (
     <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full mb-10">
       <div className="flex flex-row">
