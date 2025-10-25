@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 
-export default function Logo({ classes }) {
+export default function Logo({ className }) {
   const darkOrbit = useRef(null);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function Logo({ classes }) {
   }, []);
 
   return (
-    <div className={classes}>
+    <div className={className}>
       <svg viewBox="0 0 898.24 807.44">
         <defs>
           <style>{`

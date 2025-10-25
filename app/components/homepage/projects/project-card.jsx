@@ -20,12 +20,12 @@ function ProjectCard({ project }) {
           {project.link && (
             <Link href={project.link}>
               <span className="relative inline-block group transition-transform duration-500 hover:scale-110">
-                <span className="block text-xl font-bold text-gray-400 whitespace-nowrap">
+                <span className="block text-2xl font-bold text-gray-400 whitespace-nowrap">
                   Explore more:
                 </span>
 
                 <span className="absolute inset-0 left-0 w-0 h-full group-hover:w-full overflow-hidden transition-[width] duration-700 ease-out whitespace-nowrap">
-                  <span className="block text-xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                  <span className="block text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
                     Explore more:
                   </span>
                 </span>

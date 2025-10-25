@@ -1,7 +1,7 @@
 // TODO! Fix this.
 export const personalData = {
   name: "David Kaplan",
-  profilePhoto: "/profile.jpeg",
+  profilePhoto: "/profile.jpg",
   designation: "Aerospace Engineer",
   description:
     "I am a highly motivated aerospace and mechanical engineering student at Case Western Reserve University with a mindset to never stop learning. I am deeply interested in aviation, and I want to make aviation more efficient, more relaible, and safer.",

@@ -30,7 +30,7 @@ function Navbar() {
       {/* TODO remove this div*/}
       <div className="flex items-center justify-between py-5">
         <div className="flex flex-shrink-0 items-center">
-          <Logo classes="w-10" />
+          <Logo className="w-10" />
           <Link href="/" className=" text-[#16f2b3] text-3xl font-bold">
             DAVID KAPLAN
           </Link>
