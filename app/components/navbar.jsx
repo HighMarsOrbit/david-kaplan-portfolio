@@ -1,5 +1,5 @@
 // @flow strict
-"use client";
+"use client"; // TODO remove
 import Link from "next/link";
 import { LuAlertTriangle } from "react-icons/lu";
 
@@ -25,7 +25,8 @@ function Navbar() {
           </div>
           <LuAlertTriangle className="inline text-6xl ml-4 text-black" />
         </div>
-      </div>
+      </div>{" "}
+      {/* TODO remove this div*/}
       <div className="flex items-center justify-between py-5">
         <div className="flex flex-shrink-0 items-center">
           <Link href="/" className=" text-[#16f2b3] text-3xl font-bold">
