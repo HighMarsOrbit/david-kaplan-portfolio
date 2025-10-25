@@ -1,16 +1,16 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       container: {
         center: true,
@@ -29,7 +29,23 @@ module.exports = {
           "4k": "1980px",
         },
       },
+      keyframes: {
+        draw: {
+          "0%": { strokeDashoffset: "var(--path-length)", opacity: "0" },
+          "1%": { strokeDashoffset: "var(--path-length)", opacity: "1" },
+          "100%": { strokeDashoffset: "0", opacity: "1" },
+        },
+        scaleRotate: {
+          "0%": { transform: "scale(0) rotate(-90deg)", opacity: "0" },
+          "1%": { opacity: "1" },
+          "100%": { transform: "scale(1) rotate(0deg)", opacity: "1" },
+        },
+      },
+      animation: {
+        draw: "draw 1s ease-out forwards",
+        scaleRotate: "scaleRotate .6s ease-out forwards",
+      },
     },
   },
   plugins: [],
-}
+};
