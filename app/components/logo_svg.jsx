@@ -1,0 +1,212 @@
+"use client";
+import { useEffect, useRef } from "react";
+
+export default function Logo({ classes }) {
+  const darkOrbit = useRef(null);
+
+  useEffect(() => {
+    const path = darkOrbit.current;
+    const length = path.getTotalLength();
+
+    path.style.setProperty("--path-length", length);
+    path.style.strokeDasharray = length;
+    path.style.strokeDashoffset = length;
+  }, []);
+
+  const lightOrbit = useRef(null);
+
+  useEffect(() => {
+    const path = lightOrbit.current;
+    const length = path.getTotalLength();
+
+    path.style.setProperty("--path-length", length);
+    path.style.strokeDasharray = length;
+    path.style.strokeDashoffset = length;
+  }, []);
+
+  return (
+    <div className={classes}>
+      <svg viewBox="0 0 898.24 807.44">
+        <defs>
+          <style>{`
+            .cls-1 {
+              fill: url(#linear-gradient-2);
+            }
+
+            .cls-2 {
+              stroke: #fff;
+            }
+
+            .cls-2,
+            .cls-3 {
+              fill: none;
+              stroke-miterlimit: 10;
+              stroke-width: 8px;
+            }
+
+            .cls-4 {
+              fill: #000;
+            }
+
+            .cls-5 {
+              fill: #fff;
+            }
+
+            .cls-6 {
+              mask: url(#mask);
+            }
+
+            .cls-7 {
+              fill: url(#linear-gradient-3);
+            }
+
+            .cls-3 {
+              stroke: #260e17;
+            }
+
+            .cls-8 {
+              fill: #f26928;
+            }
+
+            .cls-9 {
+              fill: #4a1d1c;
+            }
+
+            .cls-10 {
+              fill: #841831;
+            }
+
+            .cls-11 {
+              fill: url(#linear-gradient);
+            }
+
+            .cls-12 {
+              filter: url(#luminosity-noclip);
+            }
+          `}</style>
+          <linearGradient
+            id="linear-gradient"
+            x1="144.93"
+            y1="447.7"
+            x2="664.12"
+            y2="447.7"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stopColor="#b52427" />
+            <stop offset="1" stopColor="#98292b" />
+          </linearGradient>
+          <linearGradient
+            id="linear-gradient-2"
+            x1="144.11"
+            y1="524.67"
+            x2="561.65"
+            y2="524.67"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stopColor="#3e0f28" />
+            <stop offset="1" stopColor="#571028" />
+          </linearGradient>
+          <linearGradient
+            id="linear-gradient-3"
+            x1="175.46"
+            y1="262.9"
+            x2="629.28"
+            y2="262.9"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stopColor="#f36e2f" />
+            <stop offset="1" stopColor="#ec5524" />
+          </linearGradient>
+          <filter
+            id="luminosity-noclip"
+            x="101.83"
+            y="97.6"
+            width="568.22"
+            height="628.89"
+            colorInterpolationFilters="sRGB"
+            filterUnits="userSpaceOnUse"
+          >
+            <feFlood floodColor="#fff" result="bg" />
+            <feBlend in="SourceGraphic" in2="bg" />
+          </filter>
+          <mask
+            id="mask"
+            x="101.83"
+            y="97.6"
+            width="568.22"
+            height="628.89"
+            maskUnits="userSpaceOnUse"
+          >
+            <g className="cls-12">
+              <path
+                className="cls-4"
+                d="M670.05,394.81c0,164.14-122.17,268.12-232.74,290.19-29.86,5.96,164-79.74,164-243.88S208.71,97.6,372.85,97.6s297.2,133.06,297.2,297.2Z"
+              />
+            </g>
+          </mask>
+        </defs>
+        <g id="Layer_1" data-name="Layer 1">
+          <g>
+            <path
+              className="cls-11"
+              d="M478.05,384.84c11.7,23.74,1.02,42.11,70.18,65.81,31.76,10.9,69.57-7.31,93.45-1.81,8.63,1.99,16.14,5.01,22.45,8.3-4.17,20.05-10.79,39.93-19.96,59.25-19.48,41.02-48.21,74.66-82.52,99.63-21.08-1.43-41.77-3.6-49.4-6.82-4.22-1.78-10.26-3.28-21.85-15.07-8.38-8.53-12.9-20.16-13.2-32.47-.36-15.78-6.37-24.04-19.2-30.13l-1.88-.89q-24.38-37.64-32.47-49.38c-8.36-12.15-37.33-26.75-51.74-25.63-15.84,1.24-63.34,4.95-63.34,4.95-59.99-28.49-122.77-58.3-163.66-77.71,2.46-30.99,10.51-62.08,24.64-91.83,1.88-3.96,3.84-7.85,5.89-11.67l1.58.84s78.16,37.37,118.54,56.66c8.12,3.88,82,27.17,90.93,28.28,18.66,2.32,44.7-1.46,63.37.85,9.67,1.2,19.86,5.14,25.09,13.36,1.18,1.86,2.2,3.69,3.08,5.49Z"
+            />
+            <path
+              className="cls-8"
+              d="M664.12,457.15c-6.31-3.3-13.81-6.31-22.45-8.3-23.88-5.49-61.69,12.71-93.45,1.81-69.15-23.71-58.48-42.08-70.18-65.81l49.32-36.7c35.32-22.12,58.28-62.77,101.92-84.26,35.55,56.65,48.89,125.93,34.84,193.27Z"
+            />
+            <path
+              className="cls-1"
+              d="M561.65,616.03c-75.29,54.8-177.42,67.75-267.46,24.99-101.31-48.1-157.64-152.64-149.26-258.15,40.89,19.41,103.67,49.22,163.66,77.71s118.03,56.04,147.55,70.06l1.88.89c12.83,6.09,18.83,14.36,19.2,30.13.29,12.32,4.82,23.95,13.2,32.47,11.59,11.79,17.63,13.29,21.85,15.07,7.63,3.22,28.32,5.39,49.4,6.82Z"
+            />
+            <path
+              className="cls-7"
+              d="M629.28,263.88c-43.64,21.5-66.6,62.14-101.92,84.26l-49.32,36.7c-.88-1.8-1.89-3.63-3.08-5.49-5.23-8.22-15.42-12.16-25.09-13.36-18.67-2.31-44.7,1.47-63.37-.85-8.93-1.11-82.81-24.4-90.93-28.28-40.38-19.29-118.54-56.66-118.54-56.66l-1.58-.84c16.59-30.94,38.61-57.28,64.31-78.43l148.51,70.52c11.86,5.03,18.96-10.24,7.66-16.14l-140.16-66.55c74.92-52.55,175.19-64.41,263.77-22.35,46.85,22.25,84.08,56.57,109.74,97.46Z"
+            />
+            <path
+              className="cls-10"
+              d="M456.13,530.64c-29.52-14.02-87.12-41.37-147.55-70.06,0,0,47.5-3.71,63.34-4.95,14.41-1.12,43.38,13.48,51.74,25.63q8.12,11.8,32.47,49.38Z"
+            />
+            <path
+              className="cls-9"
+              d="M395.93,255.32c11.29,5.9,4.2,21.17-7.66,16.14l-148.51-70.52c5.2-4.27,10.54-8.33,16.01-12.17l140.16,66.55Z"
+            />
+          </g>
+        </g>
+        <g id="Orbit_Lines" data-name="Orbit Lines">
+          <g className="cls-6">
+            <g>
+              <path
+                className="cls-3 animate-draw opacity-0"
+                id="dark-orbit"
+                ref={darkOrbit}
+                style={{
+                  animationDelay: "500ms",
+                }}
+                d="M630.06,420.22c5.94,80.27,13.52,169.03-24.89,241.55-37.25,67.76-113.76,70.96-179.81,47.57-147.22-50.08-266.89-214-306.07-382.33-13.14-54.62-25.39-104.71,8.16-148.58,40.11-52.45,8.15-10.24,22.71-29.94"
+              />
+              <path
+                className="cls-2 animate-draw opacity-0"
+                id="light-orbit"
+                ref={lightOrbit}
+                style={{
+                  animationDelay: "500ms",
+                }}
+                d="M620.66,420.61c5.8,78.39,15.32,163.9-22.18,234.71-36.38,66.17-107.69,69.24-172.2,46.4-143.76-48.91-260.05-209.24-298.31-373.62-12.93-53.74-25.81-109.94,7.23-141.94"
+              />
+            </g>
+          </g>
+          <path
+            className="cls-5 animate-scaleRotate opacity-0"
+            id="star"
+            style={{
+              transformOrigin: "164.405px 162.345px",
+              animationDelay: "1000ms",
+            }}
+            d="M208.77,124.73l-21.69,29.39c-4.3,5.83-4.94,13.59-1.65,20.05l16.59,32.54-29.39-21.69c-5.83-4.3-13.59-4.94-20.05-1.65l-32.54,16.59,21.69-29.39c4.3-5.83,4.94-13.59,1.65-20.05l-16.59-32.54,29.39,21.69c5.83,4.3,13.59,4.94,20.05,1.65l32.54-16.59Z"
+          />
+        </g>
+      </svg>
+    </div>
+  );
+}
