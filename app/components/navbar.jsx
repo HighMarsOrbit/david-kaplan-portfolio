@@ -1,9 +1,32 @@
 // @flow strict
+"use client"; // TODO remove
 import Link from "next/link";
+import { LuAlertTriangle } from "react-icons/lu";
 
 function Navbar() {
   return (
     <nav className="bg-transparent">
+      <div className="relative w-screen overflow-hidden bg-yellow-400 text-black font-bold text-center py-6 text-xl -mx-[calc(50vw-50%)] flex justify-center items-center">
+        <div className="relative flex items-center justify-center">
+          <LuAlertTriangle className="inline text-6xl mr-4 text-black" />
+          <div className="flex flex-col mx-8">
+            <p>UNDER CONSTRUCTION!</p>
+            <p className="text-base font-medium">
+              More projects, information, and pictures incoming. Please contact
+              me at{" "}
+              <Link
+                href="mailto:dkaplan0901@gmail.com"
+                className="underline text-blue-700"
+              >
+                dkaplan0901@gmail.com
+              </Link>{" "}
+              for more details!
+            </p>
+          </div>
+          <LuAlertTriangle className="inline text-6xl ml-4 text-black" />
+        </div>
+      </div>{" "}
+      {/* TODO remove this div*/}
       <div className="flex items-center justify-between py-5">
         <div className="flex flex-shrink-0 items-center">
           <Link href="/" className=" text-[#16f2b3] text-3xl font-bold">
