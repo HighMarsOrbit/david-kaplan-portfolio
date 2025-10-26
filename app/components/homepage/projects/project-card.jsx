@@ -14,7 +14,7 @@ function ProjectCard({ project }) {
           {project.name}
         </p>
       </div>
-      <div className="overflow-hidden flex items-center justify-center border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
+      <div className="overflow-hidden flex md:flex-col-reverse lg:flex-row items-center justify-center border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
         <div>
           <p className="text-xl mb-10">{project.description}</p>
           {project.link && (
@@ -39,7 +39,7 @@ function ProjectCard({ project }) {
             width={400}
             height={400}
             alt={project.name}
-            className="mx-10 ml-20 min-w-[40%] rounded-lg transition-all duration-1000 hover:scale-110"
+            className="mx-10 ml-20 min-w-[40%] md:mb-10 lg:mb-0 rounded-lg transition-all duration-1000 hover:scale-110"
           />
         )}
       </div>
