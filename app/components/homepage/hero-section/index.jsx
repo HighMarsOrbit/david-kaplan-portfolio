@@ -29,7 +29,7 @@ function HeroSection() {
             <span className=" text-[#16f2b3]">{personalData.designation}</span>.
           </h1>
 
-          <div className="my-12 flex items-center gap-5">
+          <div className="my-12 flex items-center gap-5 md:w-full md:justify-center lg:justify-normal">
             {personalData.linkedIn && (
               <Link
                 href={personalData.linkedIn}
@@ -77,7 +77,7 @@ function HeroSection() {
             )}
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 md:w-full md:justify-center lg:justify-normal">
             <Link
               href={`mailto:${personalData.email}`}
               className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600"
