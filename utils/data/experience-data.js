@@ -3,7 +3,7 @@ export const experiences = [
     id: 1,
     title: "Machine R&D Engineer",
     company: "Lincoln Electric",
-    duration: "(Sep 2025 - Present)",
+    duration: "(Sep 2025 - Dec 2025)",
     image: "/companies/lincolnelectric.png",
   },
   {
